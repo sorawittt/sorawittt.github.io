@@ -49,6 +49,7 @@ p {
 
 .profileText {
   margin-top: 40px;
+  font-weight: 900;
 }
 
 hr {
@@ -89,6 +90,7 @@ h2 {
   display: block;
   letter-spacing: 0px;
   margin-top: 30px;
+  font-weight: bold;
 }
 
 .icon {
