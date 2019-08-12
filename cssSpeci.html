@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/speci.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap&subset=thai" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar fixed-top">
+      <a class="nav-link nav-link-ltr" href="index.html#myProfile">Profile</a>
+      <a class="nav-link nav-link-ltr" href="index.html#myEducation"
+        >Education</a
+      >
+      <a class="nav-link nav-link-ltr" href="index.html#myHobby">Hobby</a>
+      <a class="nav-link nav-link-ltr" href="cssSpeci.html">Css Specificity</a>
+    </div>
+    <div class="container">
+      <div class="top">
+        <h3>CSS Specificity คือ</h3>
+      </div>
+      <div>
+        <p>
+          ค่าบางอย่างที่จะจะบอก browser ว่าให้เลือกใช้ Style
+          ตัวไหนมาแสดงผลหน้าเว็บ
+        </p>
+      </div>
+      <div class="top">
+        <h3>การคำนวณค่า CSS Specificity</h3>
+      </div>
+      <div>
+        <ul>
+          <li>Inline-style มีค่าความสำคัญ 1,0,0,0 ซึ่งมีค่าความสำคัญสูงสุด</li>
+          <li>ID ค่าความสำคัญคือ 0,1,0,0</li>
+          <li>Class ค่าความสำคัญคือ 0,0,1,0</li>
+          <li>Element ต่าง ๆ เช่น h1, h2, div หรือ p ค่าความสำคัญคือ 0,0,0,1</li>
+        </ul>
+        <p>การรวมค่านั้นจะดูจากจำนวนแต่ละแบบมารวมกัน ซึ่ง 0,1,0,0 นั้นก็มีค่ามากกว่า 0,1,12,0 เหมือนต่อให้มีกี่ class ก็แล้วแต่ แต่ถ้ากำหนด ID มาให้ตัวนึงก็จะยึด style จาก ID ในทันที</p>
+      </div>
+      <div class="top">
+        <h3>ตัวอย่างการรวมค่า</h3>
+      </div>
+      <div>
+        <ul>
+          <li>ul#nav li.active a มีค่าเท่ากับ 0,1,1,3 <br>
+            ID (0,1,0,0) + class (0,0,1,0) + element (0,0,0,3)
+          </li>
+          <br>
+          <li>&lt;li style="color:#B23D61"&gt; มีค่าเท่ากับ 1,0,0,0 <br>
+            Inline-style (1,0,0,0)
+          </li>
+        </ul>
+      </div>
+      <div class="top">
+        <h3>ตัวอย่างการใช้งาน</h3>
+      </div>
+      <div>
+        <h4>Html</h4>
+        <div class="example">
+            <pre>
+                &lt;div id="page"&gt;
+                    &lt;div class="box"&gt;
+                      &lt;p&gt;Hello World&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </pre>
+        </div>
+        <h4>Css</h4>
+        <div class="example">
+          <pre>
+                #page .box {
+                  color: green;
+                }
+                #page div {
+                  color: red;
+                }
+        </pre>
+        <h4>ผลลัพธ์ที่ได้</h4>
+        <h4 style="color: green; padding-left: 10em; padding-top: 20px;">Hello World</h4>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </body>
+</html>

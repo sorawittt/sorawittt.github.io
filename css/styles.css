@@ -1,0 +1,147 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 2em;
+}
+
+.box {
+  background-color: black;
+  height: 100vh;
+  padding: 200px 100px 100px 100px;
+}
+
+.nopadding {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  position: inherit;
+}
+
+#particles-js {
+    position: relative;
+}
+
+.mTop {
+  padding-top: 8%;
+}
+
+.mTop h1 {
+  color: #333;
+  text-align: center;
+  font-size: 3em;
+}
+
+#profilePic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.profileText {
+  margin-top: 40px;
+}
+
+hr {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 800px;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.schoolIcon {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  margin-top: 50px;
+  width: 1000;
+  height: 400;
+  letter-spacing: 200px;
+}
+
+.item {
+  /* To correctly align image, regardless of content height: */
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images. */
+  width: 183px;
+}
+
+.caption {
+  /* Make the caption a block so it occupies its own line. */
+  display: block;
+  letter-spacing: 0px;
+  margin-top: 30px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #031d44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.navbar {
+  display: inline;
+  background-color: white;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+#blink::after {
+  content: "_";
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

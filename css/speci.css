@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pridi', serif;
+  font-weight: 2em;
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+#particles-js {
+  height: 100%;
+  background: black;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #031d44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.navbar {
+  font-family: "PT Sans", sans-serif;
+  display: inline;
+  background-color: white;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+p {
+  color: black;
+}
+
+
+p, h4 {
+  padding-left: 2em;
+}
+
+.example {
+  font-size: 1.5em;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.top {
+  margin-top: 60px;
+  text-decoration: underline;
+}
