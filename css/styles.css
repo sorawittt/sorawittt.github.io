@@ -3,12 +3,7 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 2em;
-}
-
-.box {
-  background-color: black;
-  height: 100vh;
-  padding: 200px 100px 100px 100px;
+  color: #031d44;
 }
 
 .nopadding {
@@ -19,12 +14,15 @@ body {
 h1 {
   color: white;
   font-weight: bold;
-  font-size: 5em;
-  position: inherit;
+  font-size: 7em;
+  font-family: 'Courgette', cursive;
 }
 
 #particles-js {
-    position: relative;
+    height: 100vh;
+    background: #031d44;
+    padding: 0;
+    margin: 0;
 }
 
 .mTop {
@@ -82,15 +80,23 @@ h2 {
   /* To horizontally center images and caption */
   text-align: center;
   /* The width of the container also implies margin around the images. */
-  width: 183px;
+  width: 200px;
 }
 
-.caption {
+.captionSchool, .captionHobby {
   /* Make the caption a block so it occupies its own line. */
   display: block;
   letter-spacing: 0px;
   margin-top: 30px;
   font-weight: bold;
+}
+
+.captionSchool {
+  padding-left: 6px;
+}
+
+.captionHobby {
+  font-size: 18px;
 }
 
 .icon {
@@ -138,7 +144,7 @@ h2 {
 }
 
 #blink::after {
-  content: "_";
+  content: "|";
   animation: blinker 1s step-start infinite;
 }
 
@@ -147,3 +153,12 @@ h2 {
     opacity: 0;
   }
 }
+
+
+.btext {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+}
+
